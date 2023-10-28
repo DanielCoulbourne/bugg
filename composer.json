@@ -42,7 +42,6 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Thunk\\Bugg\\BuggServiceProvider"
             ],
             "aliases": {
                 "Bugg": "Thunk\\Bugg\\BuggFacade"
