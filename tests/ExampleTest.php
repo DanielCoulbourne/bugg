@@ -1,6 +1,6 @@
 <?php
 
-namespace Tighten\:package_php_namespace\Tests;
+namespace Thunk\Bugg\Tests;
 
 use PHPUnit\Framework\TestCase;
 

@@ -1,18 +1,18 @@
 {
-    "name": "tightenco/:package_name",
-    "description": ":package_description",
+    "name": "kathunk/bugg",
+    "description": "Thunk Debugging Utilities",
     "keywords": [
-        "tightenco",
-        ":package_name",
+        "kathunk",
+        "bugg",
         "php"
     ],
-    "homepage": "https://github.com/tighten/:package_name",
+    "homepage": "https://github.com/kathunk/bugg",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://tighten.com",
+            "name": "Daniel Coulbourne",
+            "email": "daniel.coulbourne@gmail.com",
+            "homepage": "https://thunk.devm",
             "role": "Developer"
         }
     ],
@@ -21,16 +21,16 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0",
-        "tightenco/duster": "^1.0"
+        "orchestra/testbench": "^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Tighten\\:package_php_namespace\\": "src"
+            "Tighten\\Bugg\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tighten\\:package_php_namespace\\Tests\\": "tests"
+            "Tighten\\Bugg\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -42,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tighten\\:package_php_namespace\\:package_php_namespaceServiceProvider"
+                "Tighten\\Bugg\\BuggServiceProvider"
             ],
             "aliases": {
-                ":package_php_namespace": "Tighten\\:package_php_namespace\\:package_php_namespaceFacade"
+                "Bugg": "Tighten\\Bugg\\BuggFacade"
             }
         }
     },
