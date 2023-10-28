@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tighten\\Bugg\\": "src"
+            "Thunk\\Bugg\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tighten\\Bugg\\Tests\\": "tests"
+            "Thunk\\Bugg\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -42,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tighten\\Bugg\\BuggServiceProvider"
+                "Thunk\\Bugg\\BuggServiceProvider"
             ],
             "aliases": {
-                "Bugg": "Tighten\\Bugg\\BuggFacade"
+                "Bugg": "Thunk\\Bugg\\BuggFacade"
             }
         }
     },
